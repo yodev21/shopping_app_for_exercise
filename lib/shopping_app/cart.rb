@@ -1,6 +1,7 @@
 require_relative "item_manager"
-
+require_relative "ownable"
 class Cart
+  include Ownable
   include ItemManager
 
   def initialize(owner)

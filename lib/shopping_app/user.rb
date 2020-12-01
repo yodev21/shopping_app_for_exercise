@@ -1,6 +1,5 @@
 require_relative "item_manager"
 require_relative "wallet"
-
 class User
   include ItemManager
 
@@ -9,6 +8,7 @@ class User
 
   def initialize(name)
     @name = name
+    puts "test#{self}"
     @wallet = Wallet.new(self)
   end
 
