@@ -8,7 +8,6 @@ class User
 
   def initialize(name)
     @name = name
-    puts "test#{self}"
     @wallet = Wallet.new(self)
   end
 
